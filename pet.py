@@ -7,6 +7,8 @@ class Pet:
         self.name = name
         self.breed = breed
         self.__age =  age
+        if self.__age < 0:
+            raise ValueError("the dog has to be alive bub!")
         Pet.total += 1
 
     def get_age(self):
@@ -29,6 +31,9 @@ print(p.describe())
 
 m = Pet("dog", "bark", 1200)
 print(m.describe())
+
+ghost = Pet("Ghost", "cat", -5)
+print(ghost.describe())
 
 print("you have", Pet.total, "dogs")
 
