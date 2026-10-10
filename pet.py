@@ -33,4 +33,4 @@ print(m.describe())
 print("you have", Pet.total, "dogs")
 
 rex.set_age(6)
-print(f'the dog', rex.name, 'has a new age!', rex.get_age) 
+print(f'the dog', rex.name, 'has a new age!', rex.get_age()) 
